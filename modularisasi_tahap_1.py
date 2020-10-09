@@ -4,16 +4,12 @@ luas segitiga = alis * tinggi / 2
 """
 
 # menghitung luas segitiga tanpa fungsi
+# from geometri.segitiga import luas_segitiga
+import geometri.segitiga as gs
+
 alas = 10
 tinggi = 6
 
-luas_segitiga = alas * tinggi / 2
-
-print("Segitiga dengan alas {} dan tinggi {} memiliki luas {}".format(alas, tinggi, str(int(luas_segitiga))))
-
 # menghitung luas segitiga dengan fungsi
 
-def luas_segitiga(alas, tinggi):
-    return alas * tinggi / 2
-
-print(luas_segitiga(2, 3))
+print(gs.luas_segitiga(2, 3))
